@@ -11,15 +11,19 @@
 		31D2F90D1D9AB09200544AB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D2F90C1D9AB09200544AB0 /* ViewController.swift */; };
 		31D2F90F1D9AB09200544AB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D2F90E1D9AB09200544AB0 /* Assets.xcassets */; };
 		31D2F9121D9AB09200544AB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31D2F9101D9AB09200544AB0 /* Main.storyboard */; };
+		CD26377521636EE842449808 /* Pods_AddressCSVImporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD76C733E9143EC7C3F04958 /* Pods_AddressCSVImporter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		193CC4D466D53AF50730D7D6 /* Pods-AddressCSVImporter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AddressCSVImporter.release.xcconfig"; path = "Pods/Target Support Files/Pods-AddressCSVImporter/Pods-AddressCSVImporter.release.xcconfig"; sourceTree = "<group>"; };
 		31D2F9071D9AB09200544AB0 /* AddressCSVImporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddressCSVImporter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D2F90A1D9AB09200544AB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31D2F90C1D9AB09200544AB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		31D2F90E1D9AB09200544AB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31D2F9111D9AB09200544AB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31D2F9131D9AB09200544AB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A05F186F298B46A6C3A33255 /* Pods-AddressCSVImporter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AddressCSVImporter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AddressCSVImporter/Pods-AddressCSVImporter.debug.xcconfig"; sourceTree = "<group>"; };
+		BD76C733E9143EC7C3F04958 /* Pods_AddressCSVImporter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AddressCSVImporter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +31,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD26377521636EE842449808 /* Pods_AddressCSVImporter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		281BD95CEDEDCC2A3BB2DF9C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A05F186F298B46A6C3A33255 /* Pods-AddressCSVImporter.debug.xcconfig */,
+				193CC4D466D53AF50730D7D6 /* Pods-AddressCSVImporter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		31D2F8FE1D9AB09200544AB0 = {
 			isa = PBXGroup;
 			children = (
 				31D2F9091D9AB09200544AB0 /* AddressCSVImporter */,
 				31D2F9081D9AB09200544AB0 /* Products */,
+				281BD95CEDEDCC2A3BB2DF9C /* Pods */,
+				F3DADBE177A144DD8CC8367F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +77,14 @@
 			path = AddressCSVImporter;
 			sourceTree = "<group>";
 		};
+		F3DADBE177A144DD8CC8367F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD76C733E9143EC7C3F04958 /* Pods_AddressCSVImporter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -68,9 +92,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31D2F9161D9AB09200544AB0 /* Build configuration list for PBXNativeTarget "AddressCSVImporter" */;
 			buildPhases = (
+				487714E4AB2C4BAE8643FFAA /* [CP] Check Pods Manifest.lock */,
 				31D2F9031D9AB09200544AB0 /* Sources */,
 				31D2F9041D9AB09200544AB0 /* Frameworks */,
 				31D2F9051D9AB09200544AB0 /* Resources */,
+				A1B984A03D569AB254E1FABA /* [CP] Embed Pods Frameworks */,
+				B6371A0F68E7A856DA5564B5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,6 +154,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		487714E4AB2C4BAE8643FFAA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A1B984A03D569AB254E1FABA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AddressCSVImporter/Pods-AddressCSVImporter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6371A0F68E7A856DA5564B5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AddressCSVImporter/Pods-AddressCSVImporter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		31D2F9031D9AB09200544AB0 /* Sources */ = {
@@ -244,6 +319,7 @@
 		};
 		31D2F9171D9AB09200544AB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A05F186F298B46A6C3A33255 /* Pods-AddressCSVImporter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -252,12 +328,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.mixi.MayChannel.AddressCSVImporter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
 		31D2F9181D9AB09200544AB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 193CC4D466D53AF50730D7D6 /* Pods-AddressCSVImporter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -266,7 +343,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.mixi.MayChannel.AddressCSVImporter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -289,6 +366,7 @@
 				31D2F9181D9AB09200544AB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
