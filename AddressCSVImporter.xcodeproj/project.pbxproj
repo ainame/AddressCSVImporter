@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31C68D0C1D9AB77300EDB957 /* normalize.csv in Resources */ = {isa = PBXBuildFile; fileRef = 31C68D0B1D9AB77300EDB957 /* normalize.csv */; };
 		31D2F90B1D9AB09200544AB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D2F90A1D9AB09200544AB0 /* AppDelegate.swift */; };
 		31D2F90D1D9AB09200544AB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D2F90C1D9AB09200544AB0 /* ViewController.swift */; };
 		31D2F90F1D9AB09200544AB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D2F90E1D9AB09200544AB0 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		193CC4D466D53AF50730D7D6 /* Pods-AddressCSVImporter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AddressCSVImporter.release.xcconfig"; path = "Pods/Target Support Files/Pods-AddressCSVImporter/Pods-AddressCSVImporter.release.xcconfig"; sourceTree = "<group>"; };
+		31C68D0B1D9AB77300EDB957 /* normalize.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = normalize.csv; sourceTree = "<group>"; };
 		31D2F9071D9AB09200544AB0 /* AddressCSVImporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddressCSVImporter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D2F90A1D9AB09200544AB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31D2F90C1D9AB09200544AB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 		31D2F8FE1D9AB09200544AB0 = {
 			isa = PBXGroup;
 			children = (
+				31C68D0B1D9AB77300EDB957 /* normalize.csv */,
 				31D2F9091D9AB09200544AB0 /* AddressCSVImporter */,
 				31D2F9081D9AB09200544AB0 /* Products */,
 				281BD95CEDEDCC2A3BB2DF9C /* Pods */,
@@ -148,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31C68D0C1D9AB77300EDB957 /* normalize.csv in Resources */,
 				31D2F90F1D9AB09200544AB0 /* Assets.xcassets in Resources */,
 				31D2F9121D9AB09200544AB0 /* Main.storyboard in Resources */,
 			);
